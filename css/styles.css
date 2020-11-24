@@ -1,0 +1,57 @@
+
+:root {
+    --primary: #FD9A7D;
+}
+@font-face {
+    font-family: MrDafoe;
+    src: url(../fonts/MrDafoe-Regular.ttf);
+}
+@font-face {
+    font-family: PlayFair;
+    src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+body {
+    margin: 0;
+}
+/* #main-container {
+    background-image: url("../images/rachel_3.jpg");
+    background-repeat: no-repeat;
+    height: 2000px;
+} */
+#title-section {
+    width: 50%;
+    background: url("../images/rachel_3.jpg") no-repeat;
+    background-size: contain;
+}
+#about-section {
+    width: 50%;
+    background-color: var(--primary);
+}
+#top {
+    height: 800px;
+}
+h1 {
+    font-family: MrDafoe;
+    font-weight: 400;
+    color: pink;
+}
+h2 {
+    font-family: PlayFair;
+    font-weight: 800;
+}
+.menu-container {
+    height: 500px;
+    width: 300px;
+}
+.flex-container {
+    display: flex;
+}
+
+.fill-image {
+    height: 300px;
+    width: 300px;
+    display: block;
+    border-radius: 30% 70% 60% 40% / 60% 60% 40% 40%;
+    border: 3px solid white;
+    padding: 0;
+}

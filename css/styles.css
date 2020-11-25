@@ -2,6 +2,15 @@
 :root {
     --primary: #FD9A7D;
 }
+nav {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
 @font-face {
     font-family: MrDafoe;
     src: url(../fonts/MrDafoe-Regular.ttf);
@@ -20,11 +29,11 @@ body {
 } */
 #title-section {
     width: 50%;
-    background: url("../images/rachel_3.jpg") no-repeat;
+    background: url("../images/rachel.jpg") no-repeat;
     background-size: contain;
 }
 #about-section {
-    width: 50%;
+    width: 100%;
     background-color: var(--primary);
 }
 #top {
@@ -45,13 +54,18 @@ h2 {
 }
 .flex-container {
     display: flex;
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
 }
 
 .fill-image {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     display: block;
-    border-radius: 30% 70% 60% 40% / 60% 60% 40% 40%;
-    border: 3px solid white;
+    margin: 6px 6px 0 6px;
+    border-radius: 1px;
+    /* border-radius: 30% 70% 60% 40% / 60% 60% 40% 40%; */
     padding: 0;
 }

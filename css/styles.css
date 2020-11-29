@@ -24,7 +24,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background-color:var(--primary);
+    width: 200%;
 }
 nav {
     position: fixed;
@@ -36,6 +36,7 @@ nav {
     background-color: rgba(0,0,0,.3);
 }
 
+/* Front Page Styles */
 #about {
     width: 65%;
     font-family: PlayFair;
@@ -49,25 +50,22 @@ nav {
     margin-left: 50%;
 }
 #front-page {
+    position: relative;
     background-image: url("../images/smores_trans2.png");
-    /* background-position: center top; */
+    background-color:var(--primary);
     background-position: 15% 15%;
     background-repeat: no-repeat;
     background-size: auto 70%;
     height: 100%;
-}
-/* #title-section {
     width: 50%;
-    background: url("../images/smores.jpg") no-repeat;
-    background-size: contain;
-} */
+}
 #about-section {
     width: 500px;
-    /* background-color: var(--primary); */
 }
 #slide-screen {
     position: absolute;
-    right: 10%;
+    right: 8%;
+    bottom: 10%;
     max-width: 254px;
     max-height: 76px;
     
@@ -78,7 +76,6 @@ nav {
 #top {
     height: 800px;
 }
-
 h1 {
     margin-top: 40px;
     margin-left: 200px;;
@@ -140,3 +137,12 @@ h2 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+/* End Front Page Styles */
+
+/* Back Page Styles */
+/* #back-page {
+    position: absolute;
+    Z-index: 1;
+} */
+/* End Back Page Styles */
+

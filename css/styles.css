@@ -102,15 +102,7 @@ h2 {
     display: block;
     margin: auto;
 }
-.menu-container {
-    display: block;
-    background-color: white;
-    margin: auto;
-    border-radius: 7px;
-    padding: 5px 10px 120px 10px;
-    height: 500px;
-    width: 300px;
-}
+
 
 .flex-container {
     display: flex;
@@ -152,18 +144,60 @@ h2 {
     transform: translateY(-50%);
   }
 /* End Front Page Styles */
+ 
 
+/*** Back Page Styles ***/
 #back-page {
     position: relative;
     background-color:var(--primary);
     width: 50%;
     height: 110%;
 }
+#back-page div.flex-container {
+    max-width: 85%;
+}
 
-/* Back Page Styles */
-/* #back-page {
-    position: absolute;
-    Z-index: 1;
-} */
-/* End Back Page Styles */
+/* email form styles */
+#email-form {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+#email-addr,
+#email-name,
+#email-body,
+#email-submit {
+    font-family: Montserrat;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+#email-submit {
+    background-color: white;
+    letter-spacing: 2px;
+}
+#email-submit:hover {
+    cursor: pointer;
+}
+#email-addr,
+#email-name {
+    width: 40%;
+}
+#email-body {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.menu-container {
+    display: block;
+    background-color: white;
+    margin: auto;
+    border-radius: 7px;
+    padding: 5px 10px 120px 10px;
+    height: 500px;
+    width: 300px;
+}
+/* end email form styles */
+/*** End Back Page Styles ***/
 

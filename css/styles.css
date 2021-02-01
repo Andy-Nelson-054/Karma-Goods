@@ -25,7 +25,8 @@ body {
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 /* sidebar nav */
 /* nav {
@@ -52,7 +53,9 @@ footer nav#footer-nav {
     line-height: 1.5;
     color: var(--font);
 }
-
+#desktop-notification {
+    visibility: hidden;
+}
 
 #main-container {
     display:block; 
@@ -125,7 +128,6 @@ h2 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-/* End Front Page Styles */
 
 /* email form styles */
 #email-form {
@@ -171,9 +173,8 @@ h2 {
 /* end email form styles */
 
 /*** media queries ***/
-
-/* iphone 5 */
-@media screen and (max-width: 320px) {
+/* iphone 6 plus */
+@media screen and (max-width: 414px) {
     #about {
         padding: 10px;
         font-size: 20px;
@@ -185,8 +186,8 @@ h2 {
     }
     #rachel {
         margin-top: 10px;
-        width: 320px;
-        height: 269px;
+        width: 414px;
+        height: 356px;
     }
     #logo {
         width: 150px;
@@ -196,9 +197,55 @@ h2 {
     #footer-logo {
         width: 250px;
         height: 86px;
+        margin-top: 20px;
+    }
+    #footer-nav {
+        margin-top: 40px;
+        justify-content: space-evenly;
+    }
+    #shop {
+        margin: 7px 0 0 140px;
+    }
+}
+
+/* iphone 6/7/8 */
+@media screen and (max-width: 375px) {
+    #rachel {
+        width: 375px;
+        height: 315px;
+    }
+}
+/* Moto G4 */
+@media screen and (max-width: 360px) {
+    #rachel {
+        width: 360px;
+        height: 309px
+    }
+    #shop {
+        margin: 7px 0 0 85px;
+    }
+}
+/* iphone 5 */
+@media screen and (max-width: 320px) {
+    #rachel {
+        width: 320px;
+        height: 275px
     }
     #shop {
         margin: 7px 0 0 80px;
     }
 }
+
+/* desktop notification */
+@media screen and (min-width: 768px) {
+    #main-container {
+        display: none;
+    }
+    #desktop-notification {
+        visibility: visible;
+    }
+}
+
+
+
 

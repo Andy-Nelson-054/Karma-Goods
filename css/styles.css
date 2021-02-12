@@ -173,8 +173,8 @@ h2 {
 /* end email form styles */
 
 /*** media queries ***/
-/* iphone 6 plus */
-@media screen and (max-width: 414px) {
+/* iphone 12 pro */
+@media screen and (max-width: 428px) {
     #about {
         padding: 10px;
         font-size: 20px;
@@ -193,8 +193,8 @@ h2 {
     }
     #rachel {
         margin-top: 10px;
-        width: 414px;
-        height: 356px;
+        width: 428px;
+        height: auto;
     }
     #logo {
         width: 150px;
@@ -214,19 +214,34 @@ h2 {
         margin: 7px 0 0 140px;
     }
 }
+/* iphone 6 plus */
+@media screen and (max-width: 414px) {
+    #rachel {
+        margin-top: 10px;
+        width: 414px;
+        height: 356px;
+    }
+}
+/* iphone 12 */
+@media screen and (max-width: 390px) {
+    #rachel {
+        width: 390px;
+        height: auto;
+    }
+}
 
 /* iphone 6/7/8 */
 @media screen and (max-width: 375px) {
     #rachel {
         width: 375px;
-        height: 315px;
+        height: auto;
     }
 }
 /* Moto G4 */
 @media screen and (max-width: 360px) {
     #rachel {
         width: 360px;
-        height: 309px
+        height: auto;
     }
     #shop-link {
         margin: 7px 0 0 85px;
@@ -236,7 +251,7 @@ h2 {
 @media screen and (max-width: 320px) {
     #rachel {
         width: 320px;
-        height: 275px
+        height: auto;
     }
     #shop-link {
         margin: 7px 0 0 80px;
